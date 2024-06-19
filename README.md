@@ -116,6 +116,7 @@
 
 - [팩토리로 '생성'과 '사용' 분리]
 
+<img src="https://github.com/jongheonleee/toby-spring3-1/assets/87258372/21893cc9-091e-4921-9343-6744c0f47fa3" width="500" height="500"/>
 
 - 현재 관계설정 책임을 UserDaoTest가 갖고 있음. 이를 분리해야함
   - 해당 객체는 Test를 위해 존재함
@@ -125,10 +126,14 @@
 
 - [팩토리 설계도 구조]
 
+<img src="https://github.com/jongheonleee/toby-spring3-1/assets/87258372/16ee584b-f1fa-4df0-9b3f-c5eaae3468f7" width="500" height="500"/>
+
 - UserDao 변경 영향 안 받음, DB 연결 방식 확장 가능 
 
 > ### 👉 제어의 역전, 제어 흐름 구조가 뒤바뀜
 - [제어의 역전]
+
+<img src="https://github.com/jongheonleee/toby-spring3-1/assets/87258372/e034ef06-5b60-443f-9c37-eb85fea0d76d" width="500" height="500"/>
 
 - 객체 스스로 사용할 객체를 선택하지 않음, 모든 제어 권한은 다른 대상으로 위임
 - 앞서 만든 UserDao, DaoFactory에도 제어의 역전 적용됨
