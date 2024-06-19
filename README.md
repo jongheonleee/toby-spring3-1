@@ -53,4 +53,5 @@
 
 - [메서드 추출]
 <img src="https://github.com/jongheonleee/toby-spring3-1/assets/87258372/9d078db7-caf1-4d2d-a4e7-cf7ffbdcf8b2" width="500" height="500"/>
+
 - 가장 간단한 방법, 중복 코드는 한 메서드로 정의해서 사용
