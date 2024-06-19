@@ -67,6 +67,9 @@
 - (1) 상속을 통한 확장 -> Template Method, 생성과 사용 분리 -> Factory Method 
 
 - [상속을 통한 UserDao 확장]
+<img src="https://github.com/jongheonleee/toby-spring3-1/assets/87258372/726f05b4-858c-4315-a7fe-7b72f093c54f" width="500" height="500"/>
+
+<img src="https://github.com/jongheonleee/toby-spring3-1/assets/87258372/a8e1080f-f07e-455b-bc3c-24d0538452b2" width="500" height="500"/>
 
 - Template Method : 상위에 불변, 하위에 가변으로 분리함. 상속을 통해 코드를 완성
 - Factory Method : 구체적인 객체 생성 방법을 결정, 사용과 생성을 분리 
