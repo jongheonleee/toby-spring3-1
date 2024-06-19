@@ -81,15 +81,18 @@
 
 > ### 👉 클래스의 분리, 외부로부터 주입 받기 
 - [인터페이스 도입]
+
 <img src="https://github.com/jongheonleee/toby-spring3-1/assets/87258372/e2f8ca4d-ca18-4697-8019-638b9b52f59c" width="500" height="500"/>
 
 - [불필요한 의존관계]
+
 <img src="https://github.com/jongheonleee/toby-spring3-1/assets/87258372/c44ee4ac-e363-4699-9791-98a23b460aa6" width="500" height="500"/>
 
   - 생성자 내부에 구체 코드 존재. connectionMaker = new DConnectionMaker()
   - 이를 분리해야함(관계설정은 외부로)
 
 - [관계설정 분리]
+
 <img src="https://github.com/jongheonleee/toby-spring3-1/assets/87258372/4f2e723e-353f-4666-bff7-1b05a04122a7" width="500" height="500"/>
 <img src="https://github.com/jongheonleee/toby-spring3-1/assets/87258372/87555114-c16e-4b40-b379-86938e51b4ee" width="500" height="500"/>
 
@@ -105,3 +108,30 @@
 - 전략 패턴 : 알고리즘을 외부에서 주입 
   - (1) iv로 받음(생성자)
   - (2) 매개변수로 받음(메서드)
+
+
+### 1.4 제어의 역전(IoC)
+
+> ### 👉 오브젝트 팩토리를 통한 관심사의 분리 -> '생성'과 '사용' 분리 
+
+- [팩토리로 '생성'과 '사용' 분리]
+
+
+- 현재 관계설정 책임을 UserDaoTest가 갖고 있음. 이를 분리해야함
+  - 해당 객체는 Test를 위해 존재함
+- 이를 오브젝트 팩토리로 분리
+  - 팩토리 : 객체의 생성 방법을 결정, 만들어진 객체를 반환  
+  - '생성'과 '사용' 분리(관심사의 분리)
+
+- [팩토리 설계도 구조]
+
+- UserDao 변경 영향 안 받음, DB 연결 방식 확장 가능 
+
+> ### 👉 제어의 역전, 제어 흐름 구조가 뒤바뀜
+- [제어의 역전]
+
+- 객체 스스로 사용할 객체를 선택하지 않음, 모든 제어 권한은 다른 대상으로 위임
+- 앞서 만든 UserDao, DaoFactory에도 제어의 역전 적용됨
+  - UserDao : ConnectionMaker 생성했음 -> 이를 DaoFactory에 위임
+- 제어의 역전에서는 컴포넌트의 생성과 관계설정, 사용, 생명주기 관리 등을 관장하는 존개가 필요
+
