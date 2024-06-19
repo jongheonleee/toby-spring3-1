@@ -85,6 +85,7 @@
 
 - [불필요한 의존관계]
 <img src="https://github.com/jongheonleee/toby-spring3-1/assets/87258372/c44ee4ac-e363-4699-9791-98a23b460aa6" width="500" height="500"/>
+
   - 생성자 내부에 구체 코드 존재. connectionMaker = new DConnectionMaker()
   - 이를 분리해야함(관계설정은 외부로)
 
