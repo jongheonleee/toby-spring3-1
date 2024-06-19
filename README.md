@@ -81,10 +81,15 @@
 
 > ### 👉 클래스의 분리, 외부로부터 주입 받기 
 - [인터페이스 도입]
+<img src="https://github.com/jongheonleee/toby-spring3-1/assets/87258372/e2f8ca4d-ca18-4697-8019-638b9b52f59c" width="500" height="500"/>
 
 - [불필요한 의존관계]
+<img src="https://github.com/jongheonleee/toby-spring3-1/assets/87258372/c44ee4ac-e363-4699-9791-98a23b460aa6" width="500" height="500"/>
 
 - [관계설정 분리]
+<img src="https://github.com/jongheonleee/toby-spring3-1/assets/87258372/4f2e723e-353f-4666-bff7-1b05a04122a7" width="500" height="500"/>
+<img src="https://github.com/jongheonleee/toby-spring3-1/assets/87258372/87555114-c16e-4b40-b379-86938e51b4ee" width="500" height="500"/>
+
 
 - 역할이 다르거나 변경 주기가 다른 것을 클래스 단위로 재정의해서 분리
 - 관심사의 분리, 관계 설정을 해주는 것을 외부로 분리
