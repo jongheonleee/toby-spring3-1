@@ -9,6 +9,7 @@
 > ### 👉 분리하지 않은 코드, 변경에 대처하기 어려움
 
 - [UserDao 코드] 
+
 <img src="https://github.com/jongheonleee/toby-spring3-1/assets/87258372/5b4c9897-878d-45c5-af48-7986ffd26638" width="500" height="500"/>
 
 
@@ -19,6 +20,7 @@
 
 
 - [테스트용 main()]
+
 <img src="https://github.com/jongheonleee/toby-spring3-1/assets/87258372/8de2cd5c-9533-4cf3-9ad3-08dacbd4a9f4" width="500" height="500"/>
 
 
@@ -41,6 +43,7 @@
 > ### 👉 커넥션 만들기의 추출
 
 - [add() 메서드]
+
 <img src="https://github.com/jongheonleee/toby-spring3-1/assets/87258372/401f17d6-81ee-405e-8ad7-a6b836f70d11" width="500" height="500"/>
 
 
@@ -52,6 +55,20 @@
 - get() 등등 중복 코드 발생 
 
 - [메서드 추출]
+
 <img src="https://github.com/jongheonleee/toby-spring3-1/assets/87258372/9d078db7-caf1-4d2d-a4e7-cf7ffbdcf8b2" width="500" height="500"/>
 
 - 가장 간단한 방법, 중복 코드는 한 메서드로 정의해서 사용
+  - 변경이 발생하면 해당 메서드만 변경하면 됨. 즉 변경 범위 축소 
+
+### 1-3. DB 커넥션 만들기의 독립 
+
+> ### 👉 변화를 반기는 DAO. 즉, OCP 원칙 충족 
+- (1) 상속을 통한 확장 -> Template Method, 생성과 사용 분리 -> Factory Method 
+
+- [상속을 통한 UserDao 확장]
+
+- Template Method : 상위에 불변, 하위에 가변으로 분리함. 상속을 통해 코드를 완성
+- Factory Method : 구체적인 객체 생성 방법을 결정, 사용과 생성을 분리 
+- 위의 패턴을 적용해서 OCP 충족 시킴. 즉, 패턴을 통해 관심사항이 다른 부분을 분리하고 서로 독립적으로 변경/확장할 수 있게 설계함
+
