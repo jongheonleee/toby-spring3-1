@@ -9,7 +9,7 @@
 > ### 👉 분리하지 않은 코드, 변경에 대처하기 어려움
 
 - [UserDao 코드] 
-
+<img src="https://github.com/jongheonleee/toby-spring3-1/assets/87258372/5b4c9897-878d-45c5-af48-7986ffd26638" width="500" height="500"/>
 
 
 - 사진에서 보는 것과 같이, 중복된 코드들이 많이 있음
@@ -19,6 +19,8 @@
 
 
 - [테스트용 main()]
+<img src="https://github.com/jongheonleee/toby-spring3-1/assets/87258372/8de2cd5c-9533-4cf3-9ad3-08dacbd4a9f4" width="500" height="500"/>
+
 
 - 테스트를 main(애플리케이션 실행 함수)에서 실행함
 - 테스트 또한 분리해서 관리해야함, TDD
@@ -39,15 +41,16 @@
 > ### 👉 커넥션 만들기의 추출
 
 - [add() 메서드]
+<img src="https://github.com/jongheonleee/toby-spring3-1/assets/87258372/401f17d6-81ee-405e-8ad7-a6b836f70d11" width="500" height="500"/>
 
-- add()는 세가지 관심사항이 존재
+
+- add()는 세가지 관심사항이 존재 -> 💥 SRP 위반 
   - (1) 커넥션을 어떻게 조회
   - (2) SQL문을 담는 Statement 생성 및 실행
   - (3) 자원 반납
 
-- get() 등 등 에서 중복 코드 발생 
-- [중복 코드]
+- get() 등등 중복 코드 발생 
 
 - [메서드 추출]
-
+<img src="https://github.com/jongheonleee/toby-spring3-1/assets/87258372/9d078db7-caf1-4d2d-a4e7-cf7ffbdcf8b2" width="500" height="500"/>
 - 가장 간단한 방법, 중복 코드는 한 메서드로 정의해서 사용
