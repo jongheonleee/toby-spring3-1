@@ -160,7 +160,10 @@
 
 - [스프링 빈 팩토리 활용]
 
-<img src="https://github.com/jongheonleee/toby-spring3-1/assets/87258372/e034ef06-5b60-443f-9c37-eb85fea0d76d" width="500" height="500"/>
+<img src="https://github.com/jongheonleee/toby-spring3-1/assets/87258372/ccd88758-1dbb-486c-a8da-706e55bd59a6" width="500" height="500"/>
+
+<img src="https://github.com/jongheonleee/toby-spring3-1/assets/87258372/fca998a7-7832-4e1e-9012-3095e0321aea" width="500" height="500"/>
+
 
 - 애플리케이션 컨테스트 : 빈의 생성과 관계설정 같은 제어를 담당하는 IoC 오브젝트 
 - 위의 코드는 자바 코드이지만 실질적으로는 XML과 같은 스프링 전용 설정정보
