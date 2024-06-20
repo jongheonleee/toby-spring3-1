@@ -160,11 +160,14 @@
 
 - [스프링 빈 팩토리 활용]
 
+<img src="https://github.com/jongheonleee/toby-spring3-1/assets/87258372/e034ef06-5b60-443f-9c37-eb85fea0d76d" width="500" height="500"/>
 
 - 애플리케이션 컨테스트 : 빈의 생성과 관계설정 같은 제어를 담당하는 IoC 오브젝트 
 - 위의 코드는 자바 코드이지만 실질적으로는 XML과 같은 스프링 전용 설정정보
 
 - [애플리케이션 컨텍스트 동작 원리]
+
+<img src="https://github.com/jongheonleee/toby-spring3-1/assets/87258372/46d3ddd4-c74f-41a2-a271-607a837edff0" width="500" height="500"/>
 
 - 애플리케이션 컨텍스트로 '생성'과 '사용'을 분리했을 때의 장점
   - (1) 클라는 구체 팩토리를 몰라도됨
@@ -223,13 +226,21 @@
 - 핵심은, 관심사의 분리 -> '사용'과 '생성'
 
 - [의존관계]
+  
+<img src="https://github.com/jongheonleee/toby-spring3-1/assets/87258372/21943eb3-22e7-4dc1-aa05-810cbf4d94a5" width="500" height="500"/>
+
+<img src="https://github.com/jongheonleee/toby-spring3-1/assets/87258372/672d9bbf-4c7a-4402-b509-0d3faa9ac2d0" width="500" height="500"/>
 
 - A가 B를 알고 있음, 의존하고 있음. 이는 B가 변경되면 A에도 영향이 미침을 의미함 
 
 - [의존관계 주입]
-- 코드
-- 다이어그램
-- 
+
+<img src="https://github.com/jongheonleee/toby-spring3-1/assets/87258372/c314bb43-c200-47a9-a83e-d87325554b0b" width="500" height="500"/>
+
+<img src="https://github.com/jongheonleee/toby-spring3-1/assets/87258372/56d593c9-6b00-4f24-90eb-bde0f0c1813f" width="500" height="500"/>
+
+
+
 - DI : 의존관계 주입, DL : 객체를 찾는 것 
 - 애플리케이션 컨텍스트에서는 빈을 검색하는 방법이 2가지가 있음
   - 이름 - 맵의 등록된 이름 확인 
@@ -238,6 +249,7 @@
 
 - [의존관계가 추가된 DI 설정용 클래스]
 
+<img src="https://github.com/jongheonleee/toby-spring3-1/assets/87258372/89885159-dd74-451d-8d80-768d6d6fb6e6" width="500" height="500"/>
 
 > ### 👉 메서드 주입 방법 3가지 - 생성자, setter(), 일반 메서드 
 
@@ -249,6 +261,10 @@
 > ### 👉 애플리케이션 컨텍스트는 XML을 DI 정보로 활용 가능
 - [connectionMaker() -> <bean> 전환]
 
+<img src="https://github.com/jongheonleee/toby-spring3-1/assets/87258372/2d1a516a-c75a-451c-8ee0-95f84195c6db" width="500" height="500"/>
+
+
+<img src="https://github.com/jongheonleee/toby-spring3-1/assets/87258372/7a9cb779-d663-438b-905f-d5c24da54a88" width="500" height="500"/>
 
 - @Configuration = <beans>
 - @Bean methodName() = <bean id="methodName"..
@@ -257,6 +273,8 @@
 > ### 👉 프로퍼티 값의 주입 
 
 - [DB 연결정보 설정]
+
+<img src="https://github.com/jongheonleee/toby-spring3-1/assets/87258372/207ece15-a2f8-41a0-9996-4b396b4735cf" width="500" height="500"/>
 
 - XML에 있는 값은 모두 문자열
 
