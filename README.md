@@ -354,8 +354,9 @@
 - 테스트 코드를 먼저 작성, 테스트를 성공하게 해주는 코드를 작성하는 방식
 - TDD에선 테스트 작성하고 성공 시키는 코드를 만드는 작업의 주기를 가능한 짧게 가지는 것을 권장
 - TDD의 장점 중 하나는 코드를 만들어 테스트를 실행하는 그 사이 간격이 매우 짧음 
-- 
+
 - [given / when / then]
+<img src="https://github.com/jongheonleee/toby-spring3-1/assets/87258372/d752067f-58f3-4d1f-898f-499ead602000" width="500" height="500"/>
 
 - 테스트를 작성할 때 요령, 하나의 흐름(시나리오)을 테스트
   - given : 전제 조건
@@ -369,6 +370,7 @@
 
 > ### 👉 Junit 테스트 코드 흐름
 - [Junit의 테스트 메서드 실행 방법]
+<img src="https://github.com/jongheonleee/toby-spring3-1/assets/87258372/390107e9-ee9a-4faf-97fd-c902bd379cb3" width="500" height="500"/>
 
 - Junit에서는 테스트 독립성을 위해 매번 새로운 오브젝트를 만듦
 - 테스트 코드 흐름 
@@ -387,8 +389,10 @@
 > ### 👉 테스트를 위한 애플리케이션 컨텍스트 관리
 
 - [스프링 테스트 컨텍스트를 적용한 UserDaoTest]
+<img src="https://github.com/jongheonleee/toby-spring3-1/assets/87258372/d5302e7b-7486-4404-9fd1-1b56e52a2d9b" width="500" height="500"/>
 
 - [빈과 테스트 클래스]
+<img src="https://github.com/jongheonleee/toby-spring3-1/assets/87258372/90aa6c30-5317-4f69-bb5b-fbcbfe6a5256" width="500" height="500"/>
 
 - 빈은 기본적으로 싱글톤으로 관리, 하지만 테스트는 매번 생성됨
 
