@@ -318,7 +318,7 @@
 > ### 👉 UserDaoTest 문제점과 개선 
 - [main() 메서드로 작성된 테스트]
 
-<img src="" width="500" height="500"/>
+<img src="https://github.com/jongheonleee/toby-spring3-1/assets/87258372/5bb59e5a-df2e-4a97-b0b6-acd162097ea9" width="500" height="500"/>
 
 
 - 위 코드의 문제점
@@ -328,12 +328,12 @@
 - 개선 -> 테스트 검증의 자동화
 - [수정전 테스트 코드]
 
-<img src="" width="500" height="500"/>
+<img src="https://github.com/jongheonleee/toby-spring3-1/assets/87258372/0fa0784d-4345-41e0-947a-5afc564fe89d" width="500" height="500"/>
 
 
 - [수정후 테스트 코드]
 
-<img src="" width="500" height="500"/>
+<img src="https://github.com/jongheonleee/toby-spring3-1/assets/87258372/75c96a06-b953-4a0d-b3ed-5bca995b717d" width="500" height="500"/>
 
 
 
@@ -341,6 +341,5 @@
 - Junit : 자바로 단위 테스트를 만들 때 유용함 
 - [Junit을 적용한 UserDaoTest]
 
-
-<img src="" width="500" height="500"/>
+<img src="https://github.com/jongheonleee/toby-spring3-1/assets/87258372/3b9594d4-0a85-438a-b4ae-281dc9062312" width="500" height="500"/>
 
